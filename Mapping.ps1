@@ -1,4 +1,4 @@
-﻿Start-Transcript -Path $(Join-Path $env:temp "DriveMapping.log")
+Start-Transcript -Path $(Join-Path $env:temp "DriveMapping.log")
 
 $driveMappingConfig=@()
 
@@ -22,7 +22,7 @@ $driveMappingConfig+= [PSCUSTOMOBJECT]@{
 
 $driveMappingConfig+= [PSCUSTOMOBJECT]@{
     DriveLetter = "Q"
-    UNCPath= "\\172.16.200.74\mnt\data\ISCO"
+    UNCPath= "\\172.16.200.74\fs\ISCO"
     Description="ISCO"
 }
 
