@@ -16,9 +16,16 @@ $dnsDomainName= "ad.syncom.nl"
 
 $driveMappingConfig+= [PSCUSTOMOBJECT]@{
     DriveLetter = "Z"
-    UNCPath= "\\172.16.200.74\fs\Migration\"
+    UNCPath= "\\172.16.200.74\fs\Migration"
     Description="Migration"
 }
+
+$driveMappingConfig+= [PSCUSTOMOBJECT]@{
+    DriveLetter = "Q"
+    UNCPath= "\\172.16.200.74\mnt\data\ISCO"
+    Description="ISCO"
+}
+
 
 
 ######################################################################
