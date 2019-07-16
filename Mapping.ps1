@@ -15,7 +15,7 @@ $driveMappingConfig=@()
 $dnsDomainName= "ad.syncom.nl"
 
 $Password = "01000000d08c9ddf0115d1118c7a00c04fc297eb01000000b2537f294aacaa469f151a8132bdce8b00000000020000000000106600000001000020000000d9c406bb9e107174f834bdc4ebe5720efc1c6966b7cfe074d40377552b3ac1ba000000000e80000000020000200000009a124f0cfaededa38c5216b23f62bc20bf8b2df4d7fae038d80c190d041315c010000000bcc45f14c856bbf27f7d240d8c99ad3240000000a8e2fd5e01fe0125c8bc84956c8ad813688779f10454e7988ec85b99ec7ec16582a3d3d8e58346cc3f1c821a00220792d1ca614aa5fad4149632576210bb7eac"
-$Secure = ConvertTo-SecureString -String $Password
+$Secure = ConvertTo-SecureString -AsPlainText -Force -String $Password
 $Cred = New-Object System.Management.Automation.PsCredential('analyse',$Secure)
 
 $driveMappingConfig+= [PSCUSTOMOBJECT]@{
