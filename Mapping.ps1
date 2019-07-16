@@ -15,17 +15,46 @@ $driveMappingConfig=@()
 $dnsDomainName= "ad.syncom.nl"
 
 $driveMappingConfig+= [PSCUSTOMOBJECT]@{
+    DriveLetter = "G"
+    UNCPath= "\\synbafs001.ad.syncom.nl\Data"
+    Description="Data"
+}
+
+$driveMappingConfig+= [PSCUSTOMOBJECT]@{
     DriveLetter = "Z"
-    UNCPath= "\\172.16.200.74\fs\Migration"
+    UNCPath= "\\synsvfs.ad.syncom.nl\fs\Migration"
     Description="Migration"
 }
 
 $driveMappingConfig+= [PSCUSTOMOBJECT]@{
-    DriveLetter = "Q"
-    UNCPath= "\\172.16.200.74\fs\ISCO"
+    DriveLetter = "I"
+    UNCPath= "\\synsvfs.ad.syncom.nl\fs\ISCO"
     Description="ISCO"
 }
 
+$driveMappingConfig+= [PSCUSTOMOBJECT]@{
+    DriveLetter = "P"
+    UNCPath= "\\synsvfs.ad.syncom.nl\fs\PDF"
+    Description="PDF"
+}
+
+$driveMappingConfig+= [PSCUSTOMOBJECT]@{
+    DriveLetter = "L"
+    UNCPath= "\\synsvfs.ad.syncom.nl\fs\Library"
+    Description="Library"
+}
+
+$driveMappingConfig+= [PSCUSTOMOBJECT]@{
+    DriveLetter = "A"
+    UNCPath= "\\synsvfs.ad.syncom.nl\fs\Analysis"
+    Description="Analysis"
+}
+
+$driveMappingConfig+= [PSCUSTOMOBJECT]@{
+    DriveLetter = "M"
+    UNCPath= "\\synsvfs.ad.syncom.nl\fs\Microscope"
+    Description="Microscope"
+}
 
 
 ######################################################################
